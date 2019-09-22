@@ -1,5 +1,5 @@
 <p align="center">
- <img alt="Logo" src="https://raw.githubusercontent.com/wessberg/rollup-plugin-ts/master/assets/rollup-plugin-ts-logo.png" height="150" />
+ <img alt="Logo" src="https://raw.githubusercontent.com/rx-ts/rollup-plugin-ts/master/assets/rollup-plugin-ts-logo.png" height="150" />
 </p>
 
 > A Typescript Rollup plugin that bundles declarations and respects Babel and Browserslist configurations.
@@ -225,7 +225,7 @@ You don't have to do anything.
 
 #### `@babel/runtime` and polyfills
 
-Babel supports injecting polyfills where needed and in relation to the target environment. By default, this plugin **will not** add polyfills to your chunks since there are arguably better ways of applying polyfills such as lazy-loading depending on feature support or using something like [Polyfill.app](https://github.com/wessberg/polyfiller).
+Babel supports injecting polyfills where needed and in relation to the target environment. By default, this plugin **will not** add polyfills to your chunks since there are arguably better ways of applying polyfills such as lazy-loading depending on feature support or using something like [Polyfill.app](https://github.com/rx-ts/polyfiller).
 If you would like this behavior, simply add either `@babel/plugin-transform-runtime` to your Babel config with the `corejs` option set to true, or add `@babel/preset-env` to your Babel config with the `useBuiltIns` option set to `usage`.
 
 ### Using `CustomTransformers`
@@ -238,16 +238,16 @@ This enables you to very efficiently transform Typescript before code generation
 Typescript declaration files are normally distributed in a folder structure that resembles the structure of the source folder.
 With `tsc`, you would get something like this:
 
-<img alt="TSC emitted code" src="https://raw.githubusercontent.com/wessberg/rollup-plugin-ts/master/assets/tsc-output-example.png" height="250"   />
+<img alt="TSC emitted code" src="https://raw.githubusercontent.com/rx-ts/rollup-plugin-ts/master/assets/tsc-output-example.png" height="250"   />
 
 Rollup is a bundler, and with it, we can produce clean, small files that are easy to distribute.
 With `rollup-plugin-ts`, declaration files will be bundled, tree-shaken and emitted alongside the chunks emitted by Rollup:
 
-<img alt="Plugin emitted code" src="https://raw.githubusercontent.com/wessberg/rollup-plugin-ts/master/assets/plugin-output-example.png" height="250"   />
+<img alt="Plugin emitted code" src="https://raw.githubusercontent.com/rx-ts/rollup-plugin-ts/master/assets/plugin-output-example.png" height="250"   />
 
 And, it even works in complex code splitting scenarios:
 
-<img alt="Plugin emitted code with code splitting" src="https://raw.githubusercontent.com/wessberg/rollup-plugin-ts/master/assets/plugin-output-example-code-splitting.png" height="250"   />
+<img alt="Plugin emitted code with code splitting" src="https://raw.githubusercontent.com/rx-ts/rollup-plugin-ts/master/assets/plugin-output-example-code-splitting.png" height="250"   />
 
 ## Examples
 
