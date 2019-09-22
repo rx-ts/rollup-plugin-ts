@@ -702,4 +702,4 @@ export default {
 	async,
 	keys,
 	values
-}`;
+}`

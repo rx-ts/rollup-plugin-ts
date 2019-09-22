@@ -1,9 +1,10 @@
-import {ITypescriptPluginBabelOptions} from "../../plugin/i-typescript-plugin-options";
-import {InputOptions, OutputOptions} from "rollup";
+import { InputOptions, OutputOptions } from 'rollup'
+
+import { ITypescriptPluginBabelOptions } from '../../plugin/i-typescript-plugin-options'
 
 export interface IGetDefaultBabelOptionsOptions {
-	pluginOptions: ITypescriptPluginBabelOptions;
-	browserslist?: string[];
-	rollupInputOptions: InputOptions;
-	rollupOutputOptions?: OutputOptions;
+  pluginOptions: ITypescriptPluginBabelOptions
+  browserslist?: string[]
+  rollupInputOptions: InputOptions
+  rollupOutputOptions?: OutputOptions
 }

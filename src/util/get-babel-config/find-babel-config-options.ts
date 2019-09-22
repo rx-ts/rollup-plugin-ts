@@ -1,6 +1,6 @@
-import {ITypescriptPluginBabelOptions} from "../../plugin/i-typescript-plugin-options";
+import { ITypescriptPluginBabelOptions } from '../../plugin/i-typescript-plugin-options'
 
 export interface FindBabelConfigOptions {
-	cwd: string;
-	babelConfig?: ITypescriptPluginBabelOptions["babelConfig"];
+  cwd: string
+  babelConfig?: ITypescriptPluginBabelOptions['babelConfig']
 }

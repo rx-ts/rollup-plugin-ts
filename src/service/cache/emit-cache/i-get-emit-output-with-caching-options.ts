@@ -1,7 +1,7 @@
-import {LanguageService} from "typescript";
+import { LanguageService } from 'typescript'
 
 export interface IGetEmitOutputWithCachingOptions {
-	languageService: LanguageService;
-	fileName: string;
-	dtsOnly?: boolean;
+  languageService: LanguageService
+  fileName: string
+  dtsOnly?: boolean
 }

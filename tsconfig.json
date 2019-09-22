@@ -1,6 +1,12 @@
 {
-	"extends": "@wessberg/ts-config",
-	"compilerOptions": {
-		"module": "commonjs"
-	}
+  "extends": "@1stg/tsconfig/tsconfig",
+  "compilerOptions": {
+    "baseUrl": ".",
+    "downlevelIteration": true,
+    "module": "commonjs",
+    "outDir": "lib",
+    "skipLibCheck": true,
+    "strictFunctionTypes": false,
+    "strictNullChecks": false
+  }
 }

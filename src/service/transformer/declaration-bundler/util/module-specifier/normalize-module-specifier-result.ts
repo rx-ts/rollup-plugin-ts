@@ -1,6 +1,6 @@
 export interface NormalizeModuleSpecifierResult {
-	normalizedModuleSpecifier: string;
-	normalizedAbsoluteModuleSpecifier: string;
-	isSameChunk: boolean;
-	hasChanged: boolean;
+  normalizedModuleSpecifier: string
+  normalizedAbsoluteModuleSpecifier: string
+  isSameChunk: boolean
+  hasChanged: boolean
 }

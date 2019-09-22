@@ -1,6 +1,6 @@
-import {IncrementalLanguageService} from "../language-service/incremental-language-service";
+import { IncrementalLanguageService } from '../language-service/incremental-language-service'
 
 export interface IModuleResolutionHostOptions {
-	languageServiceHost: IncrementalLanguageService;
-	extensions: string[];
+  languageServiceHost: IncrementalLanguageService
+  extensions: string[]
 }

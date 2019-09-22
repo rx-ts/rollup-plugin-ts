@@ -1,3 +1,3 @@
 export interface IDeclarationTreeShakerOptions {
-	relativeOutFileName: string;
+  relativeOutFileName: string
 }
