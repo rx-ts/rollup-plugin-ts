@@ -1,6 +1,10 @@
 {
-	"extends": "./node_modules/@wessberg/ts-config/tslint.json",
-	"linterOptions": {
-		"exclude": ["test-app/**"]
-	}
+  "extends": "@1stg/tslint-config",
+  "rules": {
+    "ban-types": false,
+    "interface-name": false
+  },
+  "linterOptions": {
+    "exclude": ["lib/**", "node_modules/**"]
+  }
 }

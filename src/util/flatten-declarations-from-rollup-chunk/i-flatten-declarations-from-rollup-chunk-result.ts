@@ -1,9 +1,9 @@
-import {SourceDescription} from "rollup";
+import { SourceDescription } from 'rollup'
 
 export interface IFlattenDeclarationsFromRollupChunkResult {
-	sourceDescription: SourceDescription;
-	declarationFilename: string;
-	absoluteDeclarationFilename: string;
-	declarationMapFilename: string;
-	absoluteDeclarationMapFilename: string;
+  sourceDescription: SourceDescription
+  declarationFilename: string
+  absoluteDeclarationFilename: string
+  declarationMapFilename: string
+  absoluteDeclarationMapFilename: string
 }

@@ -1,6 +1,6 @@
-import {OutputFile} from "typescript";
+import { OutputFile } from 'typescript'
 
 export interface IGetDeclarationsFromEmitOutputResult {
-	code: OutputFile[];
-	maps: OutputFile[];
+  code: OutputFile[]
+  maps: OutputFile[]
 }

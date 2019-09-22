@@ -1,0 +1,22 @@
+{
+  "name": "@rxts/rollup",
+  "version": 2,
+  "alias": [
+    "rollup.now.sh"
+  ],
+  "github": {
+    "silent": true
+  },
+  "builds": [
+    {
+      "src": "*.md",
+      "use": "@now/md"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/*",
+      "dest": "README.html"
+    }
+  ]
+}
